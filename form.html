@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="./index.html">Home</a>
+    <a href="./form.html">Join</a>
+    <a href="./gallery.html">Gallery</a>
+</nav>
+
+<div class="container">
+    <h1>🔥 Join Tech Community</h1>
+
+    <div class="card">
+        <form id="formMember" onsubmit="tambahData(event)">
+            <input id="namaInput" placeholder="Nama" required>
+            <input id="emailInput" type="email" placeholder="Email" required>
+
+            <select id="minatInput">
+                <option>Web Dev</option>
+                <option>AI</option>
+                <option>Cyber Security</option>
+            </select>
+
+            <button>Gabung 🚀</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

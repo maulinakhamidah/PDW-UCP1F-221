@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="tampilkanData()">
+
+<nav>
+    <a href="./index.html">Home</a>
+    <a href="./form.html">Join</a>
+    <a href="./gallery.html">Gallery</a>
+    <button onclick="toggleDark()">🌙</button>
+</nav>
+
+<div class="container">
+
+    <h1>🚀 Tech Community</h1>
+
+    <div class="card">
+        <p>Komunitas teknologi modern untuk belajar & berkembang bersama.</p>
+        <h3>Total Member: <span id="total">0</span></h3>
+    </div>
+
+    <div class="card">
+        <input id="search" class="search" placeholder="Cari nama..." onkeyup="searchData()">
+
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Minat</th>
+                <th>Aksi</th>
+            </tr>
+            <tbody id="dataMember"></tbody>
+        </table>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
